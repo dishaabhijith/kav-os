@@ -32,7 +32,7 @@
   <li><code>trace -t &lt;ip addr&gt;</code>: Get information about the entered IP Address.</li>
 </ul>
 
-<h2 align="center">v1.1.3 beta Update</h2>
+<h2 align="center">v.01 beta Update</h2>
 <ul>
   <li><code>mkdir &lt;directory&gt;</code>: Create a new directory.</li>
   <li><code>rmdir &lt;directory&gt;</code>: Remove an empty directory.</li>
