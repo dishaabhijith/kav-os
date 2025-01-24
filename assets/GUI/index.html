@@ -18,26 +18,26 @@
           </div>
         </div>
       </div>
-    
+
       <script>
         let loadingProgress = 0;
         const loadingBar = document.getElementById("loadingBar");
         const loadingScreen = document.getElementById("loadingScreen");
-    
+
         const loadingInterval = setInterval(() => {
           loadingProgress += 0.6667;
           loadingBar.style.width = loadingProgress + "%";
-          
+
           if (loadingProgress >= 100) {
             clearInterval(loadingInterval);
             loadingScreen.style.transition = "opacity 1s ease";
             loadingScreen.style.opacity = 0;
-            
+
             setTimeout(() => {
               loadingScreen.style.display = "none";
-            }, 1000);
+            }, 100);
           }
-        }, 100);
+        }, 1);
       </script>
 
     <div id="taskbar">
@@ -65,31 +65,31 @@
 
     <div class="window" id="game">
         <div class="title-bar">
-            <div class="window-controls">
-                <span class="minimize"></span>
-                <span class="maximize"></span>
-                <span class="close"></span>
-            </div>
             <span>Sonic the Hedgehog</span>
+            <div class="window-controls">
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+                <div class="button close"></div>
+            </div>
         </div>
         <div class="window-content">
             <iframe src="https://clarkeadg.github.io/opensonic-js/" frameborder="0" tabindex="0"></iframe>
         </div>
     </div>
-    
+
     <script>
         const windowElement = document.getElementById('game');
         const iframe = windowElement.querySelector('iframe');
-    
+
         windowElement.addEventListener('click', () => {
             iframe.focus();
         });
-    
+
         iframe.addEventListener('load', () => {
             iframe.focus();
         });
     </script>
-    
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -99,12 +99,12 @@
 
     <div class="window" id="file-manager">
     <div class="title-bar">
-        <div class="window-controls">
-            <span class="minimize"></span>
-            <span class="maximize"></span>
-            <span class="close"></span>
-        </div>
         <span>File Manager</span>
+        <div class="window-controls">
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+            <div class="button close"></div>
+        </div>
     </div>
     <div class="window-content">
         <div id="file-manager-header">
@@ -362,26 +362,26 @@
 
     <div class="window" id="terminal">
         <div class="title-bar">
-            <div class="window-controls">
-                <span class="minimize"></span>
-                <span class="maximize"></span>
-                <span class="close"></span>
-            </div>
             <span>Terminal</span>
+            <div class="window-controls">
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+                <div class="button close"></div>
+            </div>
         </div>
         <div class="window-content">
-            <iframe src="https://sudoelectron.netlify.app/" frameborder="0"></iframe>
+            <iframe src="../../index.html" frameborder="0"></iframe>
         </div>
     </div>
 
     <div class="window" id="chrome">
         <div class="title-bar">
-            <div class="window-controls">
-                <span class="minimize"></span>
-                <span class="maximize"></span>
-                <span class="close"> </span>
-            </div>
             <span>Music</span>
+            <div class="window-controls">
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+                <div class="button close"></div>
+            </div>
         </div>
         <div class="window-content">
             <iframe src="https://streamsquid.com/" frameborder="0"></iframe>
@@ -390,12 +390,12 @@
 
     <div class="window" id="settings">
         <div class="title-bar">
-            <div class="window-controls">
-                <span class="minimize"></span>
-                <span class="maximize"></span>
-                <span class="close"></span>
-            </div>
             <span>Settings</span>
+            <div class="window-controls">
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+                <div class="button close"></div>
+            </div>
         </div>
         <div class="window-content">
             <div class="tabs">
@@ -479,12 +479,12 @@
 
     <div class="window" id="recycle-bin">
         <div class="title-bar">
-            <div class="window-controls">
-                <span class="minimize"></span>
-                <span class="maximize"></span>
-                <span class="close"></span>
-            </div>
             <span>Recycle Bin</span>
+            <div class="window-controls">
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+                <div class="button close"></div>
+            </div>
         </div>
         <div class="window-content">
             <p>we are building cool things real soon! 🚧</p>

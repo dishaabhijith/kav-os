@@ -116,39 +116,85 @@ body, html {
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    text-align: center;
     align-items: center;
     cursor: move;
 }
 
-.window-controls {
+.title-bar span {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
-.window-controls .minimize,
-.window-controls .maximize,
-.window-controls .close {
-    width: 12px;
+.window-controls {
+    float: left;
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    /* background-color: rgba(51, 51, 51, 0.7); */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+}
+
+.window-controls .button {
     height: 12px;
+    width: 12px;
     border-radius: 50%;
-    display: inline-block;
-    margin-left: 5px;
-}
-
-.window-controls .minimize {
-    background: #f1c40f;
+    margin-right: 8px;
     cursor: pointer;
 }
 
-.window-controls .maximize {
-    background: #2ecc71;
-    cursor: pointer;
+.window-controls .button.close {
+    background-color: #ff5f56;
 }
 
-.window-controls .close {
-    background: #e74c3c;
-    cursor: pointer;
+.window-controls .button.minimize {
+    background-color: #ffbd2e;
 }
+
+.window-controls .button.maximize {
+    background-color: #27c93f;
+}
+
+/* .window-controls { */
+/*     display: flex; */
+/*     gap: 10px; */
+/* } */
+/**/
+/* .window-controls .minimize, */
+/* .window-controls .maximize, */
+/* .window-controls .close { */
+/*     width: 12px; */
+/*     height: 12px; */
+/*     border-radius: 50%; */
+/*     display: inline-block; */
+/*     margin-left: 5px; */
+/* } */
+/**/
+/* .window-controls .minimize { */
+/*     background: #f1c40f; */
+/*     cursor: pointer; */
+/* } */
+/**/
+/* .window-controls .maximize { */
+/*     background: #2ecc71; */
+/*     cursor: pointer; */
+/* } */
+/**/
+/* .window-controls .close { */
+/*     background: #e74c3c; */
+/*     cursor: pointer; */
+/* } */
 
 .window-content {
     padding: 10px;
