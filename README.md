@@ -1,7 +1,7 @@
 
 
 <h2 align="center">Overview</h2>
-<p align="center">KAV-OS is a Linux emulator designed to simulate a Debian-based Linux environment. It supports basic commands typically found in such systems, allowing users to practice and familiarize themselves with terminal operations in a controlled, browser-based environment.</p>
+<p align="center">DIVYA-OS is a Linux emulator designed to simulate a Debian-based Linux environment. It supports basic commands typically found in such systems, allowing users to practice and familiarize themselves with terminal operations in a controlled, browser-based environment.</p>
 
 <h2 align="center">Features</h2>
 <ul>
